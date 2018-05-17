@@ -4,7 +4,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/a
  && apt-get update\
  && apt-get install -y fonts-noto-cjk\
  && rm -rf /var/lib/apt/lists/*
-RUN npm install --silent -g markdown-pdf@8.0.0\
+RUN npm install --silent -g markdown-pdf@8.1.1\
  && rm -rf ~/.npm/cache/*\
  && mkdir -p /opt/docs
 WORKDIR /opt/docs
